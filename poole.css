@@ -428,3 +428,72 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+/* Switch */
+
+.switch-wrapper {
+  display: flex;
+  -webkit-box-pack: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+}
+
+.switch-wrapper .sun{
+  background: url(../img/switch/sun.svg)
+  no-repeat center;
+  background-size: 100%;
+}
+
+.switch-wrapper .toggle-wrapper {
+  margin: 10px;
+}
+
+.switch-wrapper .toggle-wrapper #switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+
+
+.switch-wrapper .toggle-wrapper label:after {
+  transition: all .2s;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: #fff;
+  border-radius: 100%;
+
+}
+.switch-wrapper .toggle-wrapper label{
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 25p;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.switch-wrapper .toggle-wrapper {
+  margin: 10px;
+}
+.switch-wrapper .moon {
+  background: url(../img/switch/moon.svg)
+  no-repeat center;
+  background-size: 100%;
+}
+
+.switch-wrapper .moon,
+.switch-wrapper .sun {
+  width: 17px;
+  height: 17px;
+}
